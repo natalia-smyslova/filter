@@ -1,0 +1,40 @@
+@import "null.css";
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    padding: 0.5em;
+}
+
+.toolbar {
+    margin-top: 2em;
+}
+
+.toolbar__list {
+    display: flex;
+}
+
+.toolbar__btn {
+    background-color: inherit;
+    padding: 0.5em 1.5em;
+    border: 1px solid #000;
+}
+
+.toolbar__btn.active {
+    background-color: #555555;
+    color: #fff;
+}
+
+
+.projectlist {
+    margin-top: 2em;
+    columns: 3;
+    column-gap: 1em;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1em;
+}
