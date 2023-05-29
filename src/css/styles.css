@@ -10,14 +10,16 @@
     margin-top: 2em;
 }
 
-.toolbar__list {
+.toolbar_list {
     display: flex;
 }
+
 
 .toolbar__btn {
     background-color: inherit;
     padding: 0.5em 1.5em;
     border: 1px solid #000;
+    margin-right: 5px;
 }
 
 .toolbar__btn.active {

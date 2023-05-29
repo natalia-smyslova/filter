@@ -4,7 +4,7 @@ import './css/styles.css';
 
 function App() {
   return (
-    <Portfolio projects={projects}/>
+    <Portfolio list={projects}/>
   )
 }
 

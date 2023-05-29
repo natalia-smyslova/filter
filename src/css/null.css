@@ -18,10 +18,7 @@
     outline: none;
   }
   
-  aside, nav, footer, header, section {
-    display: block;
-  }
-  
+
   html, body {
     height: 100%;
     min-width: var(--minWidth);

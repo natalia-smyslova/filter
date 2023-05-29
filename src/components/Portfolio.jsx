@@ -1,12 +1,11 @@
-import { Component } from 'react'
+import { Component } from 'react';
 import PropTypes from 'prop-types';
 import ProjectList from './ProjectList';
 import Toolbar from './Toolbar';
 
-export class Portfolio extends Component {
+export default class Portfolio extends Component {
     constructor(props) {
       super(props);
-      console.log(this.props);
       this.filters = ['All', 'Websites', 'Flayers', 'Business Cards'];
       this.state = { selected: 'All' }
     }
@@ -14,6 +13,7 @@ export class Portfolio extends Component {
     static propTypes = {
       filters: PropTypes.array,
       state: PropTypes.object,
+      list: PropTypes.array,
     }
   
     clickHandler(filter) {
@@ -22,8 +22,8 @@ export class Portfolio extends Component {
   
     listHandler() {
       return this.state.selected === 'All'
-        ? Object.values(this.props)
-        : Object.values(this.props).filter((item) => item.category === this.state.selected)
+      ? this.props.list
+      : this.props.list.filter(item => item.category === this.state.selected)
     }
   
     render() {
@@ -40,4 +40,4 @@ export class Portfolio extends Component {
     }
   }
   
-  export default Portfolio
+  // export default Portfolio
