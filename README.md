@@ -2,6 +2,8 @@
 
 [![Netology AHJ](https://github.com/natalia-smyslova/filter/actions/workflows/web.yml/badge.svg)](https://github.com/natalia-smyslova/filter/actions/workflows/web.yml)
 
+[ДЕМО](https://natalia-smyslova.github.io/filter/)
+
 Портфолио с фильтрами
 ===
 
